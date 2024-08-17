@@ -10,6 +10,8 @@
         // Create a method to get all books
         // The method should return a list of Book objects
 
+        List<Book> GetAllBooks();
+
         Book GetBookById(int id);
 
         // Create a method to add a book
