@@ -25,10 +25,20 @@ namespace BookStore
             { 5, new Book { Id = 5, Title = "Pride and Prejudice", Author = "Jane Austen" } }
         };
 
+        public List<Book> GetAllBooks()
+        {
+            return books.Values.ToList();
+        }
+
         public Book GetBookById(int id)
         {
             books.TryGetValue(id, out var book);
             return book;
+        }
+
+        List<Book> IBookRepository.GetAllBooks()
+        {
+            throw new NotImplementedException();
         }
     }
 }

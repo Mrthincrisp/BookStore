@@ -10,10 +10,14 @@
         // Create a method to get all books
         // The method should return a list of Book objects
 
+        List<Book> GetAllBooks();
+
         Book GetBookById(int id);
 
         // Create a method to add a book
         // The method should take a Book object as a parameter and return the ID of the newly added book
+
+        int AddBook(Book book);
 
         // Create a method to update a book
         // The method should take a Book object as a parameter and return a boolean value indicating whether the update was successful
